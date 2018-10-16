@@ -1,0 +1,108 @@
+@charset "utf-8";
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+
+*{margin: 0 auto;}
+/*------------------Top部分------------------------*/
+#top_wrap{background:#e5e5e5 ;}
+#top{
+	height: 30px;
+	width: 1200px;
+	background: #e5e5e5;
+}
+#at{float: left;
+	font-size: 12px;
+	line-height: 30px;
+}
+#top_r{
+	float: right;
+	position: relative;
+}
+#top_r li{
+	float: left;
+	line-height: 30px;
+}
+#top_r li a{
+	font-size: 12px;
+	margin-right: 14px;
+}
+#top_r li a img{
+	margin-top: 5px;
+}
+#top_r li:nth-of-type(10) a{
+	display: block;
+	width: 60px;
+	background: url(../img/iphone.png) no-repeat 0px 9px;
+	text-align: center;
+}
+#top_r li:nth-of-type(11) a{
+	display: block;
+	width: 75px;
+	background: url(../img/wx.png)no-repeat 0px 9px;
+	text-align: center;
+}
+#top_r li a:hover{color: #dc0f50;text-decoration: underline;}
+.phone{width: 120px;height: 120px;position: absolute; right: 100px;top: 30px;display: none;}
+.wxb{height: 290px;width: 140px;border: 1px solid #eee;position: absolute;right: 10px;top: 30px;display: none;}
+.wxb img{display: block;width: 120px;height: 120px;margin: auto;}
+.wxb p{text-align: center;}
+
+/*----------Search----------*/
+#nav{
+	height: 80px;
+	width: 1200px;
+}
+.n_lt{float: left;height: 80px;}
+.n_lt img{width: 234px;height: 40px;margin-top: 5px;margin-left: 8px;}
+.n_me{width: 500px;height: 44px;margin-top: 30px;}
+.n_me a{font-size: 12px;margin-right: 10px;height: 38px;line-height: 38px;}
+.n_me a:hover{color: #dc0f50;}
+.text{width: 398px;height: 40px;border: 2px solid #dc0f50;vertical-align: top;}
+.btn{width: 98px;height: 46px;border: 2px solid #dc0f50;background:#dc0f50;font-size: 16px;color: #fff;vertical-align: top;}
+.n_rg{float:right;width: 122px;height: 44px;border: 1px solid #e5e5e5;margin-right: 94px;margin-top: -42px;font-size: 12px;background: url(../img/car_icon.png)no-repeat 24px 12px;text-align:center;line-height: 44px;}
+.n_rg span{margin-left: 40px;}
+#nav1_wrap{border-bottom: 2px solid #dc0f50;margin-top: 26px;}
+
+/*--------------About-----------------*/
+#about{width: 1200px;height: 276px;}
+#about_t{height: 54px;width:1200px;display: flex;justify-content: space-around;}
+#about_t li{width: 220px;height: 54px;}
+
+#about_t li h3{margin-left:60px;font-size: 14px;font-weight: 1000;height: 22px;}
+#about_t li h4{margin-left:60px ;font-size: 12px;height: 20px;}
+.li1{background: url(../img/warrant_icon.png)no-repeat;border-right: 1px solid #d5d5d5;}
+.li2{background: url(../img/warrant_icon.png)no-repeat 0 -55px;border-right: 1px solid #d5d5d5;}
+.li2{background: url(../img/warrant_icon.png)no-repeat 0 -55px;border-right: 1px solid #d5d5d5;}
+.li3{background: url(../img/warrant_icon.png)no-repeat 0 -110px;border-right: 1px solid #d5d5d5;}
+.li4{background: url(../img/warrant_icon.png)no-repeat 0 -164px;border-right: 1px solid #d5d5d5;}
+.li5{background: url(../img/warrant_icon.png)no-repeat 0 -220px;}
+
+.ab_l{width: 938px;height: 178px;float: left;display: flex;justify-content: space-around;margin-top: 16px;}
+.ab_l p{height: 24px;}
+.ab_l h3{font-size: 20px;font-weight: 600;color: #666;}
+.ab_l a{color: #999;font-size: 12px;}
+.ab_l li a:hover{color: #dc0f50;}
+.ab_l li h3:hover{color: #dc0f50;}
+
+.ab_r{width: 250px;height: 178px;float: right;margin-top: 20px;}
+.ab_r_t{display: flex;justify-content: space-around;width: 250px;height: 106px;}
+.ab_r_t img{width: 80px;height: 80px;margin: auto;}
+.ab_r_t li {width: 94px;height: 106px;}
+.ab_r_t li span{font-size: 12px;margin-left: 8px;}
+.ab_r p:nth-of-type(1){clear:both;height: 32px;font-weight: 1000;font-size: 26px;margin-right: 10px;width: 200px;padding-left: 50px;background: url(../img/tel.png)no-repeat 16px 5px;}
+.ab_r p:nth-of-type(2){height: 20px;margin-left: 50px;font-size: 12px;color: #999;}
+
+
+/*-------底部-----------*/
+#bottom_wrap{background: #333333;}
+#bottom{height: 72px;width: 1200px;background: #333333;}
+#bottom p:nth-of-type(1){height: 42px;line-height:42px;width: 1200px;font-size: 12px;color: #999999;}
+#bottom p:nth-of-type(1) a{color: #999999;}
+#bottom p:nth-of-type(1) a:hover{color: #fff;}
+#bottom p:nth-of-type(2){height: 35px;font-size: 12px;color: #999999;}
