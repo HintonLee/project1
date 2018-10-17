@@ -109,7 +109,8 @@ function formCheck(){
 	             var t=setInterval(function(){
 	                time--;
 	                 $code.html(time+"秒");
-	                 if (time==0) {                             clearInterval(t);
+	                 if (time==0) {                             
+	                clearInterval(t);
 	                $code.html("重新获取");
 	                    djs=true;
 	                 }
@@ -136,31 +137,34 @@ function formCheck(){
 
 //提交
 var i = 0;
-function sub(){
-	var input1 = $(".cellphone");//用户名
+
+function sub() {
+	var input1 = $(".cellphone");
 	var input2 = $(".text");
-	var input3 = $(".password");//密码
+	var input3 = $(".password");
 	var input4 = $(".pw");
 	var input5 = $(".yzm");
-	var arr=[];
-	input1.next().hide();
-	input2.next().next().hide();
-	input3.next().hide();
-	input4.next().hide();
-	input5.next().next().hide();
-	i++;
-	arr.push([input1.val(),input3.val()]);
-//	setCookie("user"+i,arr,7);
-	$(".zc").attr({
-		"href":"login.html"
-	});
-	return true;
+	var arr = []; //保存信息
+		input1.next().hide();
+		input2.next().next().hide();
+		input3.next().hide();
+		input4.next().hide();
+		input5.next().next().hide();
+		//将用户信息存到cookie中
+		i++;
+		arr.push([input1.val(), input3.val()]);
+		setCookie("user" + i, arr, 7);
+		$(".zc").attr({
+			"href": "login.html"
+		});
+		return true;
 }
 function getALLnum() {
 	var num = getGoodsCookies(function(_name, obj) {});
 	return num;
 }
 $(".gow").html(getALLnum());
+
 
 
 

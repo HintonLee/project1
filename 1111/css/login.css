@@ -1,4 +1,3 @@
-
 #login{width:1200px;height: 560px;}
 a img{margin-top: 100px;margin-left: 60px;float: left;}
 #login_r{
@@ -11,7 +10,7 @@ a img{margin-top: 100px;margin-left: 60px;float: left;}
 }
 .head{width: 446px;height: 28px;}
 .head a:nth-of-type(1){display: inline-block;width: 76px;height: 30px;margin-left: 76px;border-bottom: 2px solid #dc0f50;text-align: center;color:#dc0f50 ;}
-.head a:nth-of-type(2){display: inline-block;width: 76px;height: 30px;margin-left:150px ;}
+.head a:nth-of-type(2){display: inline-block;width: 76px;height: 30px;margin-left:150px ;text-align:center ;}
 #login_r #choose{
 	width: 448px;
 	height: 330px;
@@ -20,12 +19,12 @@ a img{margin-top: 100px;margin-left: 60px;float: left;}
 	position: relative;
 }
 
-.cellphone{margin-top: 40px;margin-left: 70px;width: 302px;height: 36px;font-size: 14px;text-indent: 60px;color: #c6b1a9;}
-.pw{margin-top: 16px;margin-left: 70px;width: 302px;height: 36px;font-size: 14px;text-indent: 60px;color: #c6b1a9;}
-.i1{display: block;width: 20px;height: 20px;position: absolute;left: 82px;top: 51px;
+.cellphone{margin-top: 10px;margin-left: 70px;width: 302px;height: 36px;font-size: 14px;text-indent: 60px;}
+.pw{margin-top: 16px;margin-left: 70px;width: 302px;height: 36px;font-size: 14px;text-indent: 60px;}
+.i1{display: block;width: 20px;height: 20px;position: absolute;left: 82px;top: 61px;
 	background: url(../img/yh.png)no-repeat center;
 }
-.i2{display: block;width: 20px;height: 20px;position: absolute;left: 82px;top: 108px;background: url(../img/sz.png)no-repeat center;}
+.i2{display: block;width: 20px;height: 20px;position: absolute;left: 82px;top: 118px;background: url(../img/sz.png)no-repeat center;}
 #choose ul li:last-child{width: 306px;height: 34px;margin-left: 72px;font-size: 14px;line-height: 34px;color: #666;}
 #choose ul li:last-child span a{margin-left: 70px;color: #666;}
 .lg{display: block;
@@ -37,13 +36,17 @@ a img{margin-top: 100px;margin-left: 60px;float: left;}
 	color: #fff;
 	margin-top: 24px;
 }
+#s1{display:block;width: 300px;height: 30px;margin-top: 10px;margin-left: 70px;font-size: 12px;line-height: 30px;color: #dc0f50;}
+.sucess1{background: url(../img/sucess.png);display: inline-block;width:20px;height:20px;display: none;}
+.sucess2{background: url(../img/sucess.png);display: inline-block;width:20px;height:20px;display: none;}
+
 
 
 /*--------------快捷登录--------------------*/
  #quick{
 	width: 448px;
 	height: 330px;
-	border: 1px solid red;
+	border: 1px solid #e5e5e5;
 	position: absolute;
 	top: 31px;
 	display: none;
@@ -53,6 +56,7 @@ a img{margin-top: 100px;margin-left: 60px;float: left;}
 .cp{width: 216px;height: 30px;margin-left: 70px;vertical-align: top;text-indent: 30px;font-size: 14px;}
 #btn{width: 90px;height: 36px;vertical-align: top;border: 0;background:#dc0f50;color: #fff;}
 #picyzm{width: 216px;height: 30px;margin-left: 70px;vertical-align: top;text-indent: 30px;font-size: 14px;margin-top: 20px;}
+#v_container{width: 90px;height: 36px;vertical-align: top;border: 0;background:#dc0f50;color: #fff;display: inline-block;margin-top: 20px;text-align:center;line-height: 36px;}
 .cellyzm{width: 304px;height: 30px;margin-left: 70px;vertical-align: top;text-indent: 30px;font-size: 14px;
 margin-top: 20px;}
 .i3{display: block;width: 20px;height: 20px;position: absolute;left: 75px;top: 72px;background: url(../img/yh.png)no-repeat center;}

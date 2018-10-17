@@ -1,0 +1,157 @@
+*{margin: 0 auto;}
+#nav_con{width: 1200px;height: 40px;position: relative;}
+#qb{height: 40px;line-height: 40px;width: 234px;float: left;}
+#qbfl{font-style: normal;float: left;width: 234px;height: 40px;background:#333;font-size: 12px;color: #fff;font-weight: 100;text-indent: 20px;display: inline-block;}
+#list{width: 232px;height: 600px;border-bottom: 1px solid #666;border-right: 1px solid #666;border-left: 1px solid #666;position: absolute;top:42px;background: #fff;z-index: 1000;display: none;}
+#list li a{display:block;width: 232px;height: 40px;line-height:40px;font-size: 14px;text-indent: 20px;}
+.con_r{width: 600px;height: 40px;line-height: 40px;float: left;display: inline-block;margin-left: 60px;}
+.con_r a{display: inline-block;font-size: 16px;margin-right: 20px;}
+.con_r a:hover{color: #dc0f50;}
+
+
+/*-------------放大镜部分-----------------*/
+#more_p{
+	width: 1200px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 16px;
+	font-size: 12px;
+}
+#content{
+	width: 1200px;
+	height: 500px;
+	border: 1px solid #d6d6d6;
+	
+}
+#content_l{
+	height: 570px;
+	width: 520px;
+	float: left;
+	margin-left: 16px;
+	position: relative;
+}	
+#pic_l{
+	height: 260px;
+	width: 80px;
+	margin-top: 30px;
+	margin-left: 2px;
+	float: left;
+}
+#pic_l li{width: 80px;height: 80px;}
+.selected{border: 1px solid #666;}
+#pic_l li img{width: 78px;height: 78px;}
+
+
+.sbtn{display:block;width:15px;height: 10px;background:url(../img/up_down.png)no-repeat;position: absolute;left: 36px;top:20px}
+.xbtn{display:block;width:15px;height: 10px;background:url(../img/up_down.png)no-repeat 0 -9px;position: absolute;left: 36px;bottom: 100px;}
+
+#sc{
+	display: block;
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 250px;
+	font-size: 14px;
+	clear: both;
+	padding-left: 28px;
+	margin-top: 20px;
+	background: url(../img/sc.png)no-repeat 0 -59px;
+}
+/*-------放大镜部分------------*/
+#smallbox{width: 400px;height: 400px;float: right;overflow: hidden;position: relative;margin-top: 40px;margin-right: 30px;border: 1px solid yellow;}
+#smallbox>img{width: 350px;height: 350px;border: 1px solid teal;margin:20px auto;}
+.mask {
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.7);
+	opacity:0;
+	z-index:2;
+	cursor:move;
+}
+.float_layer {
+	position:absolute;
+	width:175px;
+	height:175px;
+	background:rgba(0,0,0,0.5);
+	display:none;
+}
+#bigbox{width: 400px;height: 400px;border: 1px solid darkgoldenrod;position: absolute;left: 550px;top: 40px;display: none;overflow: hidden;}
+#bigbox>img{position: absolute;}
+
+/*-------放大镜右边--------*/
+#content_r{
+	width: 582px;
+	height: 500px;
+	float: left;
+	margin-left: 26px;
+	margin-top: 40px;
+}
+#content_r h2{width: 560px;height: 60px;border-bottom: 1px solid #d6d6d6;font-weight: 100;font-size: 20px;}
+#price{height: 434px;
+}
+#price li{height: 36px;line-height: 36px;}
+#price li:nth-of-type(1){
+	height: 42px;
+	line-height: 42px;
+	color: #dc0f50;
+	font-size: 24px;
+}
+#price li:nth-of-type(2){
+	text-decoration: line-through;
+	color: #666;
+}
+#price li:nth-of-type(3){
+	color: #666;
+	font-size: 12px;
+}
+#price li:nth-of-type(4){
+	color: #666;
+	font-size: 12px;
+}
+#price li:nth-of-type(5){
+	font-size: 12px;
+}
+#price li:nth-of-type(5) span{
+	width: 100px;
+	height: 20px;
+	border: 1px solid #dc0f50;
+	border-radius: 4px;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+}
+#price li:nth-of-type(5) a{
+	color:#dc0f50 ;
+	font-size: 12px;
+}
+#price li:nth-of-type(6){
+	font-size: 12px;
+}
+#price li:nth-of-type(6) input{width: 40px;}
+#price li:nth-of-type(7) a{display: inline-block;margin-left: 30px;
+	width: ;
+}
+#price li:nth-of-type(7) a span{width: 20px;height: 20px;line-height:20px;background: #796dba;margin-right: 10px;color: #fff;display: inline-block;text-align: center;}
+#price li:nth-of-type(8){margin-top: 6px;}
+#price li:nth-of-type(8) button{width: 160px;height: 38px;font-size: 16px;border: 0;}
+.jion{background: #fea829;color: #fff;}
+.smart{background: #dc0f50;color: #fff;margin-left: 20px;}
+
+
+/*-----------商品详情----------------*/
+#detail{
+	width: 1200px;
+	height: 600px;
+	margin-bottom: 80px;
+	border: 1px solid turquoise;
+}
+
+
+
+
+
+
+
+
+

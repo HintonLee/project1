@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
-		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
 	</head>
 	<body>
 		<div id="top_wrap">
@@ -50,85 +50,96 @@
 				<a href="#">健安喜</a>
 			</div>
 			<div class="n_rg"><span>我的购物车</span></div>
+			
 		</div>
-		<div id="nav1_wrap"></div>
-		<!------------------------登录页---------------------------->
-		<div id="login">
-			<a href=""><img src="img/zhuce.jpg"/></a>
-			<div id="login_r">
-				<div class="head">
-					<a href="#" id="yh">用户登录</a>
-					<a href="#" id="kj">快捷登录</a>
-				</div>
-				<!-----------用户登录---------------->
-				<div id="choose">
-					<span id="s1"></span>
-					<ul>
-						<li>
-							<i class="i1"></i>
-							<input type="text" value=""  placeholder="请输入11位有效手机号" class="cellphone"/>
-							<span class="sucess1"></span>
-						</li>
-						<li>
-							<i class="i2"></i>
-							<input type="text" value=""  placeholder="请输入密码" class="pw"/>
-							<span class="sucess2"></span>
-						</li>
-						<li>
-							<label>
-								<input type="checkbox" value="" id="auto" />下次自动登录
-							</label>
-							<a href="#" class="pass">重置密码</a>
-							<span>
-								<a href="#">新用户注册</a>
-							</span>
-						</li>
+		<!--导航-->
+			<div id="nav_con">
+				<div id="qb">
+					<b id="qbfl">全部商品分类</b>
+					<ul id="list">
+						<li><a href="">服装服饰</a></li>
+						<li><a href="">食品饮料</a></li>
+						<li><a href="">生活家居</a></li>
+						<li><a href="">美妆个护</a></li>
+						<li><a href="">箱包配饰</a></li>
+						<li><a href="">海外购</a></li>
+						<li><a href="">运动健康</a></li>
+						<li><a href="">布艺家纺</a></li>
+						<li><a href="">品质厨房</a></li>
+						<li><a href="">厨房电器</a></li>
+						<li><a href="">生活电器</a></li>
+						<li><a href="">3C数码</a></li>
 					</ul>
-					<p>
-						<a  class="lg">登录</a>
-					</p>
 				</div>
-				<!----------快捷登录---------------------->
-				<div id="quick">
-					<font class="tvuser">电视激活用户由此登录</font>
-					<b>请确保你的手机畅通，用于接收验证码短信</b>
-					<ul>
-						<li>
-							<i class="i3"></i>
-							<input type="text" name="" id="" value="" placeholder="请输入有效的手机号" maxlength="11" class="cp"/><button class="yzm" id="btn">获取验证码</button>
-						</li>
-						<li>
-								<i class="i4"></i>
-								<input type="text" placeholder="请输入图片验证码" id="picyzm"/><span id="v_container"></span>
-
-							</li>
-							<li>
-								<i class="i5"></i>
-								<input type="text" placeholder="请输入验证码" class="cellyzm"/>
-								
-							</li>
-							<li>
-								<label>
-									<input type="checkbox" value="" id="auto" />下次自动登录
-								</label>
-								<a href="#" class="pass">重置密码</a>
-								<span>
-									<a href="#">新用户注册</a>
-								</span>
-							</li>
-						</ul>
-						<p>
-							<a class="dl">登录</a>
-						</p>
-					</ul>
+				<div class="con_r">
+					<a href="#" style="color: #dc0f50;">首页</a>
+					<a href="#">TV直播</a>
+					<a href="#">品牌惠</a>
+					<a href="#">家有购物APP</a>
+					<a href="#">家有尊享</a>
 				</div>
 			</div>
+		<hr style="border: 1px solid #dc0f50;"/>
+		<!-----------------详情页面--------------------->
+		<div id="more_p">
+			<a href="index.html">全部商品</a>	
+		</div>
+		<div id="content">
+			<!--左侧部分-->
+			<div id="content_l">
+				<!--上下箭头-->
+				<b class="sbtn"></b>
+				<b class="xbtn"></b>
+				<div id="smallbox">
+					<!--点击左侧小图显示右侧大图-->
+					<span class="mask"></span>
+					<!--移动的方块-->
+	    			<span class="float_layer"></span>
+					<img src="">
+				</div>
+				<div id="bigbox">
+					<img class="bigpic1" src="img/z1.jpg"/>
+				</div>
+				<!--小图-->
+				<ul id="pic_l">
+					<li><img src="img/z1.jpg"/></li>
+					<li><img src="img/z2.jpg"/></li>
+					<li><img src="img/z3.jpg"/></li>
+				</ul>
+				<div id="sc">
+					收藏
+				</div>
+			</div>
+			
+			<div id="content_r">
+				<h2>法国伯尼宝腾干红特供组</h2>
+				<ul id="price">
+					<li>￥499.0</li>
+					<li>￥598.0</li>
+					<li>商品编号：201200000</li>
+					<li>月销：    155件</li>
+					<li>促销：<span>满减</span> 满200减40 满500减100 满1300减300 <a href="#">详情&gt;&gt;</a> </li>
+					<li>购买数量：<button>-</button><input type="text" /><button>+</button></li>
+					<li>
+						<a href=""><span>正</span>正品保障</a>
+						<a href=""><span>邮</span>全场包邮</a>
+						<a href=""><span>7</span>支持7天无理由退货</a>
+					</li>
+					<li><button class="jion">加入购物车</button><button class="smart">立即购买</button></li>
+				</ul>
+			</div>
+		</div>
+		<div id="detail">
+			<div id="detail_l"></div>
 		</div>
 		
 		
 		
 		
-		<!-------------------About--------------------->
+		
+		
+		
+		<!-------------------About-------------------->
 		<div id="about">
 			<ul id="about_t">
 				<li class="li1">
@@ -218,6 +229,5 @@
 	</body>
 </html>
 <script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/detail.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mg.js" type="text/javascript" charset="utf-8"></script>
