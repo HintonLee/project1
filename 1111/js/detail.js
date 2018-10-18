@@ -78,6 +78,64 @@ for (var i = 0; i < oLi.length; i++) {
     }
 }
 
+//详细参数选项卡切换
+$("#xq").bind("click",function(){
+	$(".img").show();
+	$(".cs").hide();
+	$(this).addClass("active");
+	$("#gg").removeClass("active");
+})
+$("#gg").bind("click",function(){
+	$(".cs").show();
+	$(".img").hide();
+	$(this).addClass("active");
+	$("#xq").removeClass("active");
+})
+
+//ajax请求json中的图片
+$.ajax({
+	type:"get",
+	url:"json/data.json",
+	async:true,
+	success:function(data){
+		console.log(data)
+		for(i=0;i<data.length;i++){
+			var json = data[i]
+			var conStr = '';
+			conStr += `
+			<span class="tu" id="tu"><img src="${json.src}" /></span> 
+			`;
+			//console.log(conStr)//将所有的图片加到span中
+			$(".img").append(conStr);
+			
+			
+		}
+		$("<p style='font-size:14px;margin-left:100px'>家有购物集团股份有限公司</p>").appendTo($('.img'))
+	}
+	
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -20,4 +20,18 @@ function getTime(obj) {
 }
 
 
-//ajax请求数据
+$(function() {
+    $(window).scroll(function() {
+        var t = $(this).scrollTop();
+        if (t > 300) {
+            $(".posi4").stop().fadeIn(300);
+        } else {
+            $(".posi4").stop().fadeOut(300);
+        }
+    });
+    $(".posi4").click(function() {
+        $("body,html").stop().animate({
+            scrollTop: 0
+        }, 300); //html是为了兼容火狐和IE  
+    });
+});
