@@ -159,12 +159,12 @@ function sub() {
 		});
 		return true;
 }
+
 function getALLnum() {
 	var num = getGoodsCookies(function(_name, obj) {});
 	return num;
 }
 $(".gow").html(getALLnum());
-
 
 
 

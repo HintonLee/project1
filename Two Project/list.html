@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
-		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
 	</head>
 	<body>
 		<div id="top_wrap">
@@ -50,73 +50,49 @@
 				<a href="#">健安喜</a>
 			</div>
 			<div class="n_rg"><span>我的购物车</span></div>
+			
 		</div>
-		<div id="nav1_wrap"></div>
-		<!--------------------注册----------------------------->
-		<div id="main">
-			<div id="main_left">
-				<ul id="main_l">
-						<li>
-							<b>
-								<i class="i1">*</i>
-								手机号
-							</b>
-							<input type="text" value="" placeholder="请输入11位有效手机号" class="cellphone" />
-							<span></span>
-						</li>
-	
-						<li>
-							<b>
-								<i class="i1">*</i>
-								图片验证码
-							</b>
-							<input type="text" value="" placeholder="请输入图片验证码" class="text" id="text"/><span id="v_container"></span>
-							<span></span>
-						</li>
-						<li>
-							<b>
-								<i class="i1">*</i>
-								设置密码
-							</b>
-							<input type="text" value="" placeholder="请输入6-16个字符，不能有空格哦" class="password" />
-							<span></span>
-						</li>
-						<li>
-							<b>
-								<i class="i1">*</i>
-								确认密码
-							</b>
-							<input type="text" value="" placeholder="请输入确认密码" class="pw" />
-							<span></span>
-						</li>
-						<li>
-							<b>
-								<i class="i1">*</i>
-								验证码
-							</b>
-							<input type="text" class="yzm" />
-							<button id="btn">获取验证码</button>
-							<span></span>
-						</li>
-				</ul>
-					<label>
-						<input type="checkbox" name="" id="yd" value="" />我已阅读并同意<a href="http://www.jyh.com/IndexMain.html?u=Help&cid=44971604001000010005">《会员注册协议》</a>和<a href="http://www.jyh.com/IndexMain.html?u=Help&cid=44971604001000010005">《隐私保护政策》</a>
-					</label>
-				</p>
-				<p class="on">
-					<a href="#" class="zc">立即注册</a>
-				</p>
-				<font>
-					<a href="login.html">我已注册，立即登录</a>
-				</font>
+		<!--导航-->
+			<div id="nav_con">
+				<div id="qb">
+					<b id="qbfl">全部商品分类</b>
+					<ul id="list">
+						<li><a href="">服装服饰</a></li>
+						<li><a href="">食品饮料</a></li>
+						<li><a href="">生活家居</a></li>
+						<li><a href="">美妆个护</a></li>
+						<li><a href="">箱包配饰</a></li>
+						<li><a href="">海外购</a></li>
+						<li><a href="">运动健康</a></li>
+						<li><a href="">布艺家纺</a></li>
+						<li><a href="">品质厨房</a></li>
+						<li><a href="">厨房电器</a></li>
+						<li><a href="">生活电器</a></li>
+						<li><a href="">3C数码</a></li>
+					</ul>
+				</div>
+				<div class="con_r">
+					<a href="#" style="color: #dc0f50;">首页</a>
+					<a href="#">TV直播</a>
+					<a href="#">品牌惠</a>
+					<a href="#">家有购物APP</a>
+					<a href="#">家有尊享</a>
+				</div>
 			</div>
-			<!-----------注册页图片------------->
-			<div id="main_r">
-				<img src="img/zhuce.jpg"/>
-			</div>
+		<hr style="border: 1px solid #dc0f50;"/>
+		<!------------列表------------->
+		<div id="content">
+			<ul id="lists">
+				<!--<li>
+					<a href="detail.html">
+					<img src="img/ls001.jpg"/>
+					<p>黄小毛铃声坚果薄皮核桃5斤</p>
+					<h3>￥199</h3>
+					<span>月销116件</span></a>
+				</li>-->
+			</ul>
 		</div>
-		
-		<!-------------------About--------------------->
+		<!-------------------About-------------------->
 		<div id="about">
 			<ul id="about_t">
 				<li class="li1">
@@ -145,7 +121,7 @@
 					<li class="ab_l_li1">
 						<h3>关于我们</h3>
 						<p><a href="#">公司介绍</a></p>
-						<p><a href="#">招聘信息</p></a>
+						<p><a href="#">招聘信息</a></p>
 						<p><a href="#">联系我们</a></p>
 						<p><a href="#">用户隐私条款</a></p>
 					</li>
@@ -205,8 +181,5 @@
 		</div>
 	</body>
 </html>
-<script src="js/jquery-1.11.3.js"></script>
-<script src="js/cookie.js"></script>
-<script src="js/index.js"></script>
-<script src="js/jQuery.js"></script>
-<script src="js/register.js"></script>
+<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/list.js" type="text/javascript" charset="utf-8"></script>

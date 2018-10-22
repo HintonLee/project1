@@ -92,30 +92,35 @@ $("#gg").bind("click",function(){
 	$("#xq").removeClass("active");
 })
 
-//ajax请求json中的图片
-$.ajax({
-	type:"get",
-	url:"json/data.json",
-	async:true,
-	success:function(data){
-		console.log(data)
-		for(i=0;i<data.length;i++){
-			var json = data[i]
+//ajax请求json中的图片   点击列表页的那个图片进入相应的详情页
+window.onload = function(){
+	var str = location.href;
+	str = str.split("?")[1];
+	var id = str.split("=")[1];
+//	console.log(arr);//进行分割得到最后的结果
+	$.ajax({
+		type:"get",
+		url:"json/list.json",
+		async:true,
+		success:function(data){
 			var conStr = '';
-			conStr += `
-			<span class="tu" id="tu"><img src="${json.src}" /></span> 
-			`;
-			//console.log(conStr)//将所有的图片加到span中
-			$(".img").append(conStr);
-			
-			
+			for(i=0;i<data.length;i++){
+				var json = data[i]
+				if(json.id == id ){
+				conStr += `
+				<span class="tu" id="tu"><img src="${json.src}" /><img src="${json.src2}" /><img src="${json.src3}" /><img src="${json.src4}" /><img src="${json.src5}" /><img src="${json.src6}" /></span> 
+				`;
+				//console.log(conStr)//将所有的图片加到span中
+				$(".img").append(conStr);
+					
+				}
+				
+				
+			}
+			$("<p style='font-size:14px;margin-left:100px'>家有购物集团股份有限公司</p>").appendTo($('.img'))
 		}
-		$("<p style='font-size:14px;margin-left:100px'>家有购物集团股份有限公司</p>").appendTo($('.img'))
-	}
-	
-});
-
-
+	})
+}
 
 
 

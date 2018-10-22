@@ -1,0 +1,83 @@
+*{margin: 0 auto;}
+#nav_con{width: 1200px;height: 40px;position: relative;}
+#qb{height: 40px;line-height: 40px;width: 234px;float: left;}
+#qbfl{font-style: normal;float: left;width: 234px;height: 40px;background:#333;font-size: 12px;color: #fff;font-weight: 100;text-indent: 20px;display: inline-block;}
+#list{width: 232px;height: 600px;border-bottom: 1px solid #666;border-right: 1px solid #666;border-left: 1px solid #666;position: absolute;top:42px;background: #fff;z-index: 1000;display: none;}
+#list li a{display:block;width: 232px;height: 40px;line-height:40px;font-size: 14px;text-indent: 20px;}
+.con_r{width: 600px;height: 40px;line-height: 40px;float: left;display: inline-block;margin-left: 60px;}
+.con_r a{display: inline-block;font-size: 16px;margin-right: 20px;}
+.con_r a:hover{color: #dc0f50;}
+/*-----------列表内容----------------*/
+#content{
+	width: 1200px;
+	margin: auto;
+	margin-bottom: 80px;
+	margin-top: 100px;
+	overflow: hidden;	
+	
+}
+#lists{
+	width: 960px;
+	border: 1px solid teal;
+	float: left;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+#lists li{
+	margin: 30px 10px;
+	float: left;
+	width: 214px;
+	height: 330px;
+
+}
+#lists li img{
+	width: 214px;
+	height: 214px;
+}
+#lists li p{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+#lists li h3{
+	color: #e11f24;
+	height: 40px;
+	line-height: 40px;
+}
+#lists li span{
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
